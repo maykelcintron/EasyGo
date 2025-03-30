@@ -1,8 +1,19 @@
-import { Link } from "expo-router";
-import { Text, View, ImageBackground, Image, Button, TouchableOpacity } from "react-native";
+import { Text, View, ImageBackground, Image, TouchableOpacity } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
+import { useRouter } from "expo-router";
 
 export default function Welcome() {
+
+    const router = useRouter();
+
+    const handlePress = (id: string) => {
+        if (id === 'create-account') {
+            router.push("/(auth)/sign-up")
+        } else {
+            router.push("/")
+        }
+    }
+
     return (
         <SafeAreaView className="bg-primaryBlack px-5 h-full">
             <View className="border-b-gray-400 border-b-2 p-3">
@@ -48,22 +59,20 @@ export default function Welcome() {
                         left: 0,
                     }}
                 >
-                    <TouchableOpacity
-                        className="p-4 bg-primaryYellow rounded-full"
-                        activeOpacity={0.7}
-                    >
-                        <Text className="text-center font-bold uppercase">
-                            Iniciar Sesión
-                        </Text>
-                    </TouchableOpacity>
-
 
                     <TouchableOpacity
-                        className="bg-gray-700 mt-5 p-4 rounded-full"
-                        activeOpacity={0.7}
+                        onPress={() => handlePress("log-in")}
+                        activeOpacity={0.9}
                     >
-                        <Link className="text-center font-semibold uppercase text-white" href={'/(auth)/sign-up'}>Crear Cuenta</Link>
+                        <Text className="text-center font-bold uppercase p-4 bg-primaryYellow rounded-full">Iniciar Sesión</Text>
                     </TouchableOpacity>
+
+                    <TouchableOpacity
+                        onPress={() => handlePress("create-account")}
+                        activeOpacity={0.9}>
+                        <Text className="text-center font-semibold uppercase text-white bg-gray-700 mt-5 p-4 rounded-full">Crear Cuenta</Text>
+                    </TouchableOpacity>
+
                 </View>
             </View>
         </SafeAreaView>
