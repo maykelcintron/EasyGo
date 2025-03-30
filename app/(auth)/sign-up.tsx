@@ -1,10 +1,12 @@
-import { Text } from "react-native";
-import { SafeAreaView } from "react-native-safe-area-context";
+import { ScrollView, Text, View } from "react-native";
+
 
 export default function SignUp() {
     return (
-        <SafeAreaView>
-            <Text>This is the sign-up</Text>
-        </SafeAreaView>
+        <ScrollView className="flex">
+            <View className="p-10">
+                <Text className="text-4xl">Logo Aquí</Text>
+            </View>
+        </ScrollView>
     );
 }

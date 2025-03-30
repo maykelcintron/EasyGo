@@ -1,3 +1,4 @@
+import { Link } from "expo-router";
 import { Text, View, ImageBackground, Image, Button, TouchableOpacity } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
@@ -9,8 +10,8 @@ export default function Welcome() {
             </View>
 
             <View className="mt-10">
-                <Text className="text-4xl text-white text-center font-bold">Lorem ipsum dolor sit amet consectetur</Text>
-                <Text className="text-center text-gray-100 mt-5">Viajes cómodos alrededor de la ciudad</Text>
+                <Text className="text-4xl text-white text-center font-bold leading-[3rem]">Lorem ipsum, dolor sit amet consectetur</Text>
+                <Text className="text-center text-gray-100 mt-5 font-medium">Viaja seguro por toda la península de Paraguaná</Text>
             </View>
 
             <View
@@ -47,7 +48,9 @@ export default function Welcome() {
                         left: 0,
                     }}
                 >
-                    <TouchableOpacity className="p-4 rounded-lg bg-primaryYellow"
+                    <TouchableOpacity
+                        className="p-4 bg-primaryYellow rounded-full"
+                        activeOpacity={0.7}
                     >
                         <Text className="text-center font-bold uppercase">
                             Iniciar Sesión
@@ -56,9 +59,10 @@ export default function Welcome() {
 
 
                     <TouchableOpacity
-                    className="bg-gray-700 mt-5 p-4 rounded-lg"
+                        className="bg-gray-700 mt-5 p-4 rounded-full"
+                        activeOpacity={0.7}
                     >
-                        <Text className="text-center font-semibold uppercase text-white">Crear nueva cuenta</Text>
+                        <Link className="text-center font-semibold uppercase text-white" href={'/(auth)/sign-up'}>Crear Cuenta</Link>
                     </TouchableOpacity>
                 </View>
             </View>
