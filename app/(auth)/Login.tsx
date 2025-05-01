@@ -19,7 +19,7 @@ const Login = () => {
                     </Text>
                 </View>
 
-                <View className="bg-[#F1B90C] rounded-t-[36px] h-full p-5 shadow-lg shadow-black">
+                <View className="bg-[#F1B90C] rounded-t-[36px] h-full p-5">
                     <View className="w-full h-[380px] pt-20">
                         <Image 
                             source={PublicityEasyGo}
@@ -29,7 +29,7 @@ const Login = () => {
                     </View>
 
                     <TouchableOpacity 
-                        className="bg-[#150B22] rounded-full py-4 shadow-lg shadow-black"
+                        className="bg-[#150B22] rounded-full py-4"
                     >
                         <Text 
                             className="text-2xl text-[#F1B90C] uppercase text-center font-bold"
