@@ -1,6 +1,8 @@
+import { View } from "react-native"
+
 const RegisterAccount = () => {
     return (
-        <div>RegisterAccount</div>
+        <View>RegisterAccount</View>
     )
 }
 
