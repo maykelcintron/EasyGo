@@ -39,7 +39,7 @@ const Login = () => {
                     </TouchableOpacity>    
 
                     <TouchableOpacity 
-                        className="bg-[#E1E5F4] rounded-full py-4 shadow-lg shadow-black mt-4"
+                        className="bg-[#E1E5F4] rounded-full py-4 mt-4"
                     >
                         <Text 
                             className="text-2xl text-black uppercase text-center font-bold"
