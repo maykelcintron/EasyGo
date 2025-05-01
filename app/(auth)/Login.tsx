@@ -1,6 +1,8 @@
+import { View } from "react-native"
+
 const Login = () => {
     return (
-        <div>Login</div>
+        <View>Login</View>
     )
 }
 
