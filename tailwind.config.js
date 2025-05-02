@@ -7,7 +7,8 @@ module.exports = {
     extend: {
       colors: {
         mustard: "#F1B900",
-        obsidian: "#150B26"
+        obsidian: "#150B26",
+        lightGray: "#E1E5F4"
       }
     },
   },
