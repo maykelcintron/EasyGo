@@ -7,7 +7,7 @@ import UserIcon from "../../public/usericon.png";
 import Vector from "../../public/Vector 630.png";
 import InputField from "../components/InputField";
 
-const RegisterAccount = () => {
+const EnterYourAccount = () => {
     return (
 
         <View className="bg-mustard min-h-screen">
@@ -52,4 +52,4 @@ const RegisterAccount = () => {
     )
 }
 
-export default RegisterAccount
+export default EnterYourAccount

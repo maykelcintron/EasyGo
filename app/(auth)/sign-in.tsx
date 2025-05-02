@@ -2,7 +2,7 @@ import { Image, ScrollView, Text, TouchableOpacity, View } from "react-native"
 import Logo from "../../public/logo.png"
 import PublicityEasyGo from "../../public/publicity_easygo.png"
 
-const Login = () => {
+const SignIn = () => {
     return (
         <View className="bg-[#150B22] h-screen">
             <ScrollView className="w-full">
@@ -53,4 +53,4 @@ const Login = () => {
     )
 }
 
-export default Login
+export default SignIn
