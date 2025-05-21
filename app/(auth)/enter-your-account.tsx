@@ -13,7 +13,6 @@ const EnterYourAccount = () => {
         <View className="bg-mustard min-h-screen">
             <View className="mt-28 p-4">
                 <Text className="text-obsidian text-5xl text-center font-black">Ingresa Tu Cuenta</Text>
-
                 <Text className="text-obsidian text-2xl mt-7 font-bold">¡Bienvenido de nuevo! Inicia sesión para acceder a tus servicios.</Text>
             </View>
 
