@@ -1,7 +1,8 @@
 import { Link } from "expo-router"
-import { Image, Platform, SafeAreaView, ScrollView, Text, View } from "react-native"
-import Logo from "../../public/logo.png"
-import PublicityEasyGo from "../../public/publicity_easygo.png"
+import { Image, Platform, ScrollView, Text, View } from "react-native"
+import { SafeAreaView } from "react-native-safe-area-context"
+import Logo from '../../public/logo.png'
+import PublicityEasyGo from '../../public/publicity_easygo.png'
 
 const SignIn = () => {
     return (
